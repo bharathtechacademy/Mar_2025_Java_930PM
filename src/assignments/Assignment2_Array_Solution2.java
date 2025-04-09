@@ -7,12 +7,16 @@ public class Assignment2_Array_Solution2 {
 		String[][][] data = new String[5][2][6]; //5 SEMESTERS , each semister 2 GROUPS (sub, marks) and each group 6 SUBJECTS
 
 		// Semester 1
+		
+		//Subjects
 		data[0][0][0] = "Mathematics I";
 		data[0][0][1] = "Physics";
 		data[0][0][2] = "Chemistry";
 		data[0][0][3] = "Computer Programming";
 		data[0][0][4] = "Engineering Drawing";
 		data[0][0][5] = "Basic Electrical Eng.";
+		
+		//marks
 		data[0][1][0] = "Pass(78)";
 		data[0][1][1] = "Pass(85)";
 		data[0][1][2] = "Fail(21)";
@@ -27,6 +31,7 @@ public class Assignment2_Array_Solution2 {
 		data[1][0][3] = "Basic Electronics";
 		data[1][0][4] = "Engineering Physics";
 		data[1][0][5] = "Engineering Graphics";
+		
 		data[1][1][0] = "Pass(82)";
 		data[1][1][1] = "Pass(77)";
 		data[1][1][2] = "Pass(93)";
@@ -41,6 +46,7 @@ public class Assignment2_Array_Solution2 {
 		data[2][0][3] = "Operating Systems";
 		data[2][0][4] = "Signals and Systems";
 		data[2][0][5] = "Object-Oriented Prog.";
+		
 		data[2][1][0] = "Pass(88)";
 		data[2][1][1] = "Pass(81)";
 		data[2][1][2] = "Pass(76)";
@@ -55,6 +61,7 @@ public class Assignment2_Array_Solution2 {
 		data[3][0][3] = "Microprocessors";
 		data[3][0][4] = "Communication Eng.";
 		data[3][0][5] = "Software Engineering";
+		
 		data[3][1][0] = "Pass(91)";
 		data[3][1][1] = "Pass(73)";
 		data[3][1][2] = "Fail(19)";
@@ -69,6 +76,7 @@ public class Assignment2_Array_Solution2 {
 		data[4][0][3] = "Theory of Computation";
 		data[4][0][4] = "Embedded Systems";
 		data[4][0][5] = "Computer Graphics";
+		
 		data[4][1][0] = "Pass(86)";
 		data[4][1][1] = "Pass(88)";
 		data[4][1][2] = "Pass(84)";

@@ -1,4 +1,4 @@
-package language.basics;
+package basics;
 
 public class DebugTheProgram {
 

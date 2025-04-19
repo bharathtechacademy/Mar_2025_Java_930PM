@@ -9,7 +9,7 @@ public class Assignment7_ConditionalStatements {
 		int creditScore = 720; // Customer's credit score
 		double income = 55000.0; // Annual income of the customer
 		boolean isEmployed = true; // Employment status
-		double debtToIncomeRatio = 35.0; // Debt-to-Income ratio in percentage
+		double debtToIncomeRatio = 45.0; // Debt-to-Income ratio in percentage
 
 		// Display initial message
 		System.out.println("Loan Evaluation Result for: " + customerName);

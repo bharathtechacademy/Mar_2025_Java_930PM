@@ -29,7 +29,7 @@ public class Assignment8_ConditionalStatementsLoops {
 			} else {
 				// It's a debit transaction
 				totalDebits++; // Increment the debit transaction count
-				totalDebitAmount += Math.abs(amount); // Convert to positive and add to total debited amount
+				totalDebitAmount -= amount; // Convert to positive and add to total debited amount
 
 				// Check for suspiciously large debit transaction
 				if (amount < -10000) {

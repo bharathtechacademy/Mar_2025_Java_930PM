@@ -12,27 +12,27 @@ public class WithMethodsInTesting2 {
 	public static void main(String[] args) {
 		WithMethodsInTesting2 obj = new WithMethodsInTesting2();	
 		
-		obj.launchBrowserAndApplication();
+		obj.launchBrowserAndApplication("chrome","www.amazon.com");
 		WithMethodsInTesting2.loginIntoApp();
 		System.out.println("Execute Test Case 1 Steps Related to HomePage....");
 		obj.logoutAndCloseBrowser();
 		
-		obj.launchBrowserAndApplication();
+		obj.launchBrowserAndApplication("chrome","www.amazon.com");
 		WithMethodsInTesting2.loginIntoApp();
 		System.out.println("Execute Test Case 2 Steps Related to Fund Transfer Page....");
 		obj.logoutAndCloseBrowser();
 		
-		obj.launchBrowserAndApplication();
+		obj.launchBrowserAndApplication("firefox","www.qa.amazon.com");
 		WithMethodsInTesting2.loginIntoApp();
 		System.out.println("Execute Test Case 3 Steps Related to Login Page....");
 		obj.logoutAndCloseBrowser();
 		
-		obj.launchBrowserAndApplication();
+		obj.launchBrowserAndApplication("firefox","www.qa.amazon.com");
 		WithMethodsInTesting2.loginIntoApp();
 		System.out.println("Execute Test Case 3 Steps Related to Login Page....");
 		obj.logoutAndCloseBrowser();
 		
-		obj.launchBrowserAndApplication();
+		obj.launchBrowserAndApplication("edge","www.uat.amazon.com");
 		WithMethodsInTesting2.loginIntoApp();
 		System.out.println("Execute Test Case 4 Steps Related to Check the balance Page....");
 		System.out.println(obj.getbalance());
@@ -40,23 +40,23 @@ public class WithMethodsInTesting2 {
 	}
 	
 	
-	void launchBrowserAndApplication() { //instance variable
-		System.out.println("Launch the firefox browser");
-		System.out.println("Enter url and launch application");
-	}
+	void launchBrowserAndApplication(String browserName , String appUrl) { //method with arguments , //method without return type
+		System.out.println("Launch the "+browserName+" browser");
+		System.out.println("Enter url "+appUrl+" and launch application");
+	}	
 
-	static void loginIntoApp() {//static variable
+	static void loginIntoApp() {//static method
 		System.out.println("Enter username as Bharath");
 		System.out.println("Enter password as bharath123");
 		System.out.println("Click on Login button");
 	}
 
-	void logoutAndCloseBrowser() {
+	void logoutAndCloseBrowser() {//method without arguments
 		System.out.println("Logout from application");
 		System.out.println("Close the browser");
 	}
 
-	double getbalance() {
+	double getbalance() {//method with return type
 		System.out.println("Navigate to account section");
 		System.out.println("Capture the Account balance");
 		double balance = 1000.50;

@@ -12,10 +12,10 @@ public class Constructor1 {
 		
 	}
 
-	int empId;
+	int empId =0;
 	
-	Constructor1(int empid){ //parameterized constructor
-		this.empId=empid;
+	Constructor1(int id){ //parameterized constructor
+		empId=id;
 	}
 	
 	public void printEmpDetails(String name) {
